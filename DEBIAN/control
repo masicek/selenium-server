@@ -1,5 +1,5 @@
 Package: selenium-server
-Version: 2.26
+Version: 2.27.0
 Section: web
 Priority: extra
 Maintainer: Adam Vlasak <adam.vlasak@gmail.com>
