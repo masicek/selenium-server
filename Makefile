@@ -3,7 +3,7 @@
 NAME=selenium-server
 VERSION=2.28.0
 ARCH=amd64
-PACKAGE_NAME=$(NAME)-$(VERSION)-$(ARCH).deb
+PACKAGE_NAME=$(NAME)-$(VERSION)_$(ARCH).deb
 
 TMP_DIR=./tmp
 JAR=selenium-server-standalone-$(VERSION).jar
