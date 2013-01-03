@@ -1,5 +1,5 @@
-Package: selenium-server
-Version: 2.27.0
+Package: %NAME%
+Version: %VERSION%
 Section: web
 Priority: extra
 Maintainer: Adam Vlasak <adam.vlasak@gmail.com>

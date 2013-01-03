@@ -41,6 +41,8 @@ deb_prepare: install
 	cp $(DEBIAN_DIR)/control $(DEST_DIR)/DEBIAN/control
 	cp $(DEBIAN_DIR)/postinst $(DEST_DIR)/DEBIAN/postinst
 	chmod +x $(DEST_DIR)/DEBIAN/postinst
+	sed -i 's/%VERSION%/$(VERSION)/' $(DEST_DIR)/DEBIAN/control
+	sed -i 's/%NAME%/$(NAME)/' $(DEST_DIR)/DEBIAN/control
 
 deb_build:
 	dpkg-deb -b $(DEST_DIR)/ $(PACKAGE_NAME)
