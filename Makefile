@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 NAME=selenium-server
-VERSION=2.28.0
+VERSION=2.30.0
 ARCH=amd64
 PACKAGE_NAME=$(NAME)-$(VERSION)_$(ARCH).deb
 
