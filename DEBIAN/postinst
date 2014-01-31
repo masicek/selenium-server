@@ -1,10 +1,8 @@
 #!/bin/bash
 
-NAME=selenium-server
+chown -R root:root /opt/%NAME%
+rm -f /usr/local/bin/%NAME%
+chmod +x /opt/$NAME/%NAME%
+ln -s /opt/%NAME%/%NAME% /usr/local/bin/%NAME%
 
-chown -R root:root /opt/$NAME
-rm -f /usr/local/bin/$NAME
-chmod +x /opt/$NAME/$NAME
-ln -s /opt/$NAME/$NAME /usr/local/bin/$NAME
-
-ln -s /opt/$NAME/selenium-server-standalone-%VERSION%.jar /opt/$NAME/selenium-server-standalone.jar
+ln -s /opt/%NAME%/selenium-server-standalone-%VERSION%.jar /opt/%NAME%/selenium-server-standalone.jar
